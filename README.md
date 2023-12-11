@@ -1,2 +1,2 @@
-# Programs_of_Flowchart_question
+# Training
 Programs of Flowchart Questions created in C++
