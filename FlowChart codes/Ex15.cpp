@@ -9,26 +9,14 @@
 
 using namespace std;
 
-
 int main()
 {
-    int i,n;
+    int n,i=3,fact=1;
     cout<<"Enter n:";
     cin>>n;
-    int x=1;
-    for(i=1;i<=n*2;i+=2){
-        int ans=1;
-        for(int j=1;j<=i;j++){
-            ans*=j;
-        }
-        if(x%2==0){
-            ans*=-1;
-        }
-        else{
-            ans*=1;
-        }
-        x++;
-        cout<<ans<<" ";
+    for(;i<=(n*n)/2;i+=2){
+        cout<<fact<<" ";
+        fact=fact*i*(i-1)*(-1);
     }
 
     return 0;

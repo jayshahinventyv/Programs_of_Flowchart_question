@@ -8,7 +8,6 @@
 
 using namespace std;
 
-
 int main()
 {
     int n;
@@ -16,13 +15,8 @@ int main()
     cin>>n;
     int j=1;
     for(int i=1;i<=n;i++){
-        if(i%2==0){
-            j=i*-1;
-        }
-        else{
-            j=i*1;
-        }
-        cout<<j<<" ";
+        cout<<i*j<<" ";
+        j=j*(-1);
     }
 
     return 0;
