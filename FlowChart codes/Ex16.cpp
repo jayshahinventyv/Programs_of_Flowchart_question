@@ -10,14 +10,14 @@ int main() {
         j = i;
 
         while (j <= 2 * i - 1) {
-            std::cout << j << std::endl;
+            std::cout << j << " ";
             j++;
         }
 
-        j = 2 * i - 1;
+        j = j-2;
 
-        while (j > i) {
-            std::cout << j << std::endl;
+        while (j >= i) {
+            std::cout << j << " ";
             j--;
         }
 
