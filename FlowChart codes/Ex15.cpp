@@ -5,18 +5,21 @@
         
 */
 
-#include <bits/stdc++.h>
-
+#include <iostream>
 using namespace std;
 
-int main()
-{
-    int n,i=3,fact=1;
-    cout<<"Enter n:";
-    cin>>n;
-    for(;i<=(n*n)/2;i+=2){
-        cout<<fact<<" ";
-        fact=fact*i*(i-1)*(-1);
+int main() {
+    int n;
+    cout << "Enter a number: ";
+    cin >> n;
+
+    int fact = 1;
+    int i = 3;
+
+    while (i <= (n * n / 2)) {
+        cout << fact << endl;
+        fact = fact * i * (i - 1) * (-1);
+        i = i + 2;
     }
 
     return 0;

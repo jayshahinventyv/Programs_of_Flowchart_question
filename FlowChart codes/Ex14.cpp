@@ -4,19 +4,20 @@
         
 */
 
-#include <bits/stdc++.h>
+#include <iostream>
 
-using namespace std;
-
-int main()
-{
+int main() {
     int n;
-    cout<<"Enter n:";
-    cin>>n;
-    int j=1;
-    for(int i=1;i<=n;i++){
-        cout<<i*j<<" ";
-        j=j*(-1);
+    std::cout << "Enter a number: ";
+    std::cin >> n;
+
+    int j = 1;
+    int i = 1;
+
+    while (i <= n) {
+        std::cout << i * j << " ";
+        i++;
+        j *= -1;
     }
 
     return 0;
