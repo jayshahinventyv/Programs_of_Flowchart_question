@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Index</title>
+    <style>
+        .tab-content {
+            display: none;
+        }
+
+        :target {
+            display: block;
+        }
+
+        #login:target ~ #register,
+        #register:target ~ #login {
+            display: none;
+        }
+
+        /* Rest of your styles remain unchanged */
+    </style>
+</head>
+
+<body>
+    <!-- Your existing HTML structure -->
+
+    <div class="auth">
+        <div class="tab-content" id="login">
+            <!-- Login Form -->
+            <input type="text" id="username" placeholder="Enter Username">
+            <input type="password" id="pass" placeholder="Enter Password">
+            <button>Login</button>
+            <!-- End of Login Form -->
+            <p>Don't have an account? <a href="#register">Register here</a>.</p>
+        </div>
+
+        <div class="tab-content" id="register">
+            <!-- Register Form -->
+            <input type="text" id="name" class="input" placeholder="Enter Name">
+            <input type="text" id="new_username" class="input" placeholder="Enter Username">
+            <input type="password" id="new_pass" class="input" placeholder="Enter Password">
+            <button>Register</button>
+            <!-- End of Register Form -->
+            <p>Already have an account? <a href="#login">Login here</a>.</p>
+        </div>
+    </div>
+</body>
+
+</html>

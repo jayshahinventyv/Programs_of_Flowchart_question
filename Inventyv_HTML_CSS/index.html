@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport"  http-equiv="refresh" content="0; url=#login" content="width=device-width, initial-scale=1.0"> -->
+
+    <title>Index</title>
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <style>
+        /* #login {
+            display: block ;
+        }
+        #register {
+            display: none;
+        } */
+
+        .tab-content {
+            display: none;
+        }
+
+        :target {
+            display: block;
+        }
+
+        #login:target~#register,
+        #register:target~#login {
+            display: none;
+        }
+
+        .tab-content:target {
+            display: block;
+        }
+
+
+        #login {
+            /* display: block; */
+            padding: 10%;
+        }
+
+        #register {
+            padding: 10%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; height: 97vh;  ">
+        <div style="background-color: #d8dce3; width: 60%; text-align:center;">
+            <div>
+                <img src="./assests/data/img1.jpeg" alt="nature" style="height: 30vh; transform: translate(0%,50%);" />
+            </div>
+            <div>
+                <p style="text-align: center; transform:translateY(20vh) ;color:#18212e;">Lorem ipsum, or lipsum as it is sometimes
+                    known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to
+                    an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De
+                    Finibus Bonorum et Malorum for use in a type specimen book. </p>
+            </div>
+        </div>
+        <div style="background-color: #4f6382; width: 40%;">
+            <img src="./assests/data/img1.jpeg" alt="nature" 
+                style="height: 5vh; transform: translate(37vh,32vh); z-index: 999; position: absolute; border-radius:20vh; width:5vh" />
+            <div class="div-right-part2">
+                <ul class="tabs">
+                    <!--login -->
+                    <li class="tab" style=" margin-top: 30vh;
+                    margin-left: 20vh;">
+                        <input type="radio" name="tabs" checked="checked" id="tab1" />
+                        <label for="tab1">LOGIN </label>
+                        <div id="tab-content1" class="content">
+                            <form>
+                                <div class="text-center">
+                                    <input name="username" type="text" placeholder="Username" />
+                                </div>
+                                <div class="text-center">
+                                    <input name="password" type="password" placeholder="Password" />
+                                </div>
+                                <div class="text-center">
+                                    <button class="btn-login">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <!-- tab2-register -->
+                    <li class="tab" style=" margin-top: 30vh;">
+                        <input type="radio" name="tabs" id="tab2" />
+                        <label for="tab2">REGISTER</label>
+                        <div id="tab-content2" class="content">
+                            <form>
+                                <div class="text-center">
+                                    <input name="username" type="text" placeholder="Username" />
+                                </div>
+                                <div class="text-center">
+                                    <input name="password" type="password" placeholder="Password" />
+                                </div>
+                                <div class="text-center">
+                                    <input name="confirmpassword" type="password" placeholder="Confirm Password" />
+                                </div>
+                                <div class="text-center">
+                                    <button class="btn-login">Register</button>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>
