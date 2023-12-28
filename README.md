@@ -21,13 +21,13 @@
          - When user click on Register design look like below:
                ![image](https://github.com/jayshahinventyv/Training_Inventyv_JayShah/assets/153286470/e336d72f-d2e2-4a40-abb5-4cbb12557e41)
     * It is done only using HTML and CSS without JS.
-3. JS_Assignment_2
+3. JS_Assignment_2 (JS Promise Problem)
    * Objective: It contain main.js which does following task.
         - Declare array and firstElement which should be inside IIFE function.
         - Created fun2 get call from IIFE function.Inside fun2 create another arr2 where need to push firstElement to arr2.
         - Create promise where resolve call when sum greater than 30 otherwise reject.
         - To handle resolve fetching image url from the fake api.
-4. Recursion_Assignment_3
+4. Recursion_Assignment_3 (JS Recursion Practice Problem)
    * Objective : It contain 3 problem in js file.
      - Problem-1 : Calculate nCr.
      - Problem-2 : Storing and displaying all element of array using Recursion (n=10).
