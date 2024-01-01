@@ -20,7 +20,7 @@ function display(arr){
         return ;
     }
     else
-    var x=arr.shift();
+        var x=arr.shift();
 console.log(x);
 display(arr);
 }
