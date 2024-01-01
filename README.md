@@ -32,5 +32,6 @@
      - Problem-1 : Calculate nCr.
      - Problem-2 : Storing and displaying all element of array using Recursion (n=10).
      - Problem-3 : Take n find fib upto nth term, then filter prime out of that and then difference of prime and sum it up.
-    
+5. Logic Building in FigJam
+   * Objective: It is PDF file which contain Flowchart created in FigJam.With each flowchart there is JamBot generated code in JS.    
    
