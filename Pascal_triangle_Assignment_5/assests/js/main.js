@@ -85,7 +85,6 @@ console.log(primeArr);
     document.getElementById('pascalsTriangle').innerHTML = triangleHTML;
   }
 
-//   const num = prompt("Enter a 4-digit number:");
-//   const combinations = generateCombinations(inputNumber);
-  const limit = 15; // Change this limit as needed (up to 15 rows)
+
+  const limit = 15;
   generateCenteredPascalsTriangle(limit, primeArr);
