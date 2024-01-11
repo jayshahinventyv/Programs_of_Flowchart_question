@@ -1,0 +1,31 @@
+<div *ngIf="pop then modal"></div>
+<ng-template #modal>
+
+    <div class="modal-dialog" role="document" id="close">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Content</h5>
+            </div>
+            <div class="modal-body">
+                <input type="text" placeholder="Description" #desc style="width: 100%;">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="close()">Close</button>
+                <button type="button" class="btn btn-primary" (click)="saveChange(desc.value)">Save changes</button>
+            </div>
+        </div>
+    </div>
+    <div>
+
+        <ul>
+            <li *ngFor="let item of list">
+                <div #item>{{item.name}}</div>
+                <!-- {{v}} -->
+                <button type="button" class="btn btn-success" (click)="updateItem(item.id)">Update</button>
+                <button type="button" class="btn btn-danger" (click)="deleteItem(item.id)">Delete</button>
+                
+            </li>
+            
+        </ul>
+    </div>
+    </ng-template>
